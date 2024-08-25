@@ -41,6 +41,7 @@
       url = "github:nix-community/nixos-wsl";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nixos-cli.url = "github:water-sucks/nixos";
   };
   outputs = inputs:
     inputs.snowfall-lib.mkFlake {
@@ -79,6 +80,7 @@
           disko.nixosModules.disko
           stylix.nixosModules.stylix
           home-manager.nixosModules.home-manager
+          nixos-cli.nixosModules.nixos-cli
         ];
         hosts = {
           wsl.modules = with inputs; [
