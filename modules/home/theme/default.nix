@@ -32,6 +32,8 @@ in {
   config = mkIf cfg.enable {
     stylix = {
       enable = true;
+      #polarity = "dark";
+      base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
       image = pkgs.fetchurl {
         url =
           "https://gruvbox-wallpapers.pages.dev/wallpapers/irl/YRAJQAT4Dg-avesta-rezaeizadeh-unsplash.jpg";

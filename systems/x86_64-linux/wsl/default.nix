@@ -26,5 +26,6 @@
     jhilker98 = {
       common.enable = true;
       desktop.enable = true;
+      theme.enable = true;
     };
 }
