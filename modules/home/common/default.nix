@@ -44,19 +44,7 @@ in {
         };
       };
     };
-    jhilker98 = {
-      starship.enable = true;
-      dev = {
-        emacs.enable = true;
-        fzf.enable = true;
-      };
-      langs = { python.enable = true; };
-      zsh.enable = true;
-      fish.enable = true;
-      services.waterNotifier = { enable = true; };
-      gpg.enable = true;
-      theme.enable = true;
-    };
+
    nix.settings.extra-experimental-features = ["nix-command" "flakes"];
   };
 }
