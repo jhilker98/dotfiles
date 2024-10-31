@@ -37,10 +37,6 @@
     nix-wallpaper = { url = "github:lunik1/nix-wallpaper"; };
     ags.url = "github:Aylur/ags";
     paisa.url = "github:ananthakumaran/paisa";
-    nixos-wsl = {
-      url = "github:nix-community/nixos-wsl";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
     nixos-cli.url = "github:water-sucks/nixos";
   };
   outputs = inputs:
@@ -82,11 +78,6 @@
           home-manager.nixosModules.home-manager
           nixos-cli.nixosModules.nixos-cli
         ];
-        hosts = {
-          wsl.modules = with inputs; [
-            nixos-wsl.nixosModules.wsl
-          ];
-        };
       };
       homes = {
         modules = with inputs; [
